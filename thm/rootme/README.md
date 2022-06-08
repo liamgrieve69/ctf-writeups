@@ -1,5 +1,6 @@
 Rootme TryHAckMe 
 > Liam Grieve 08/06/22 
+> 
 export IP=10.10.224.210
 --------------------------------
 
@@ -49,18 +50,10 @@ THM{y0u_g0t_a_sh3ll}
 1. Search for files with SUID permission, which file is weird?
 ```
  /usr/bin/python
-id
-
-
 ```
 2. NO ANSWER NEEDED
 
 3. root.txt
 ```
 THM{pr1v1l3g3_3sc4l4t10n}
-```
-
-
-```python
-python -c "import pty;pty.spawn('/bin/bash')"
 ```
