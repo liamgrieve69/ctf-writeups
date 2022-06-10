@@ -82,7 +82,7 @@ Home Depot
 ```
 support@teckbe.com
 ```
-3. What is the sender's email?
+3. What is the subject line? 
 
 ```
 Order Placed : Your Order ID OD2321657089291 Placed Successfully
