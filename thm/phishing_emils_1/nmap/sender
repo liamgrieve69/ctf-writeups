@@ -1,0 +1,162 @@
+# Nmap 7.92 scan initiated Fri Jun 10 20:10:36 2022 as: nmap -sC -sV -oN nmap/sender 43.255.56.161
+Nmap scan report for smtp3-160.lomoffy.com (43.255.56.161)
+Host is up (0.38s latency).
+Scanned at 2022-06-10 20:10:36 BST for 168s
+Not shown: 991 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE       VERSION
+21/tcp    open     ftp           Pure-FTPd
+| ssl-cert: Subject: commonName=goaussies.com
+| Subject Alternative Name: DNS:goaussies.com
+| Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-05-08T03:34:04
+| Not valid after:  2022-08-06T03:34:03
+| MD5:   d6f8 09ce 4d14 6b70 54c6 fc05 a6d7 4a3c
+| SHA-1: 79cd b61e 9ad9 b06c c9fd 0d68 edcd 7f49 4139 321a
+| -----BEGIN CERTIFICATE-----
+| MIIFHjCCBAagAwIBAgISAyZKlroouUdoHIvhbt7mmzzTMA0GCSqGSIb3DQEBCwUA
+| MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+| EwJSMzAeFw0yMjA1MDgwMzM0MDRaFw0yMjA4MDYwMzM0MDNaMBgxFjAUBgNVBAMT
+| DWdvYXVzc2llcy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCx
+| 0UwlD2ZEpVLAeF0b/ob9Bj4Z3NH8YIlQ3kq73TJfgJWf4xx7/bpJaWQSjsY6gugN
+| ScboIRymiiPnnVY1EL/xFeNWcsywq8Q4Pu6p/CZDbsm5Ew/WQZDauT4xRdBn3NAy
+| 20G2sVK6vSsqWLVs3T3vd4HxX43X05vCdXpwz4F5iHOvnjgKDLbXn1JKGOs9+tOh
+| kaXEWNSh+7uAB6i9CNw3PbEMebldtMVN9cliI8/pxoEIDx61VCrJHgF/Z5jdgtOG
+| clzFq1/ntXSk/wkPUbsBq7AL4ob2lhtI4syeG4qzF/HUiOmK+0e/pFl/REXKUPtA
+| itJN0lRva5M2A9PhvaQVAgMBAAGjggJGMIICQjAOBgNVHQ8BAf8EBAMCBaAwHQYD
+| VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0O
+| BBYEFLdSahG5TgpTUn2F+oaKCqWrhtdoMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJ
+| QOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3Iz
+| Lm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcv
+| MBgGA1UdEQQRMA+CDWdvYXVzc2llcy5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEw
+| NwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5j
+| cnlwdC5vcmcwggECBgorBgEEAdZ5AgQCBIHzBIHwAO4AdQDfpV6raIJPH2yt7rhf
+| Tj5a6s2iEqRqXo47EsAgRFwqcwAAAYCh8i3YAAAEAwBGMEQCIHLvaMg9oETS0fqc
+| 1UTX3PaiTsnFRBbvfJs80iWPLa3TAiAhU9Ds7+aJa7m55dpW55mDlHuVexM+LHvr
+| jI4DxYE/MwB1ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABgKHy
+| LcoAAAQDAEYwRAIgOzA7ib9yF0cPQKs7oksPsFTTvDa8q3X0RVcJ3En/pL4CIBZ0
+| aiDow9iwfD85mwiLqzoAR/VGy4Q0Ly7nBr38/2PbMA0GCSqGSIb3DQEBCwUAA4IB
+| AQCUa4wmpj5hRyl4+emvuyoszNiBTKsM3bgBVr8CwHwf9h+Ehs4NIYvyj6u1qE34
+| SYDCC+R/bhctQgXXJn7hpR1DEbmWCyp10BwY443w1eOVEPLIE0QL3+5o1ldDwOrb
+| H47KRJmE3INCH/x6J+FFDhJv+FSTBrPAGYhS3shgZjxD8o63t4GhdQkzzo+W4XOb
+| WfaQBgQxE6MCP3GNfQaFlNufIpeKel4HIPQ0/BCzilhp0HBp2rVJASwDNQsvnaj+
+| Gc4qtmICo70meDKpc9qa9Nq9X4KYdH0DoCDh4idGAiLZN/nXzw6jNo3ZIFt1YST6
+| TbscGcwsxP50XXiW7fhbmP+e
+|_-----END CERTIFICATE-----
+25/tcp    open     smtp          netqmail smtpd 1.04
+| smtp-commands: goaussies.com, STARTTLS, AUTH LOGIN PLAIN, AUTH=LOGIN PLAIN, PIPELINING, 8BITMIME
+|_ netqmail home page: http://qmail.org/netqmail
+| ssl-cert: Subject: commonName=goaussies.com
+| Subject Alternative Name: DNS:goaussies.com
+| Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-05-08T03:34:04
+| Not valid after:  2022-08-06T03:34:03
+| MD5:   d6f8 09ce 4d14 6b70 54c6 fc05 a6d7 4a3c
+| SHA-1: 79cd b61e 9ad9 b06c c9fd 0d68 edcd 7f49 4139 321a
+| -----BEGIN CERTIFICATE-----
+| MIIFHjCCBAagAwIBAgISAyZKlroouUdoHIvhbt7mmzzTMA0GCSqGSIb3DQEBCwUA
+| MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+| EwJSMzAeFw0yMjA1MDgwMzM0MDRaFw0yMjA4MDYwMzM0MDNaMBgxFjAUBgNVBAMT
+| DWdvYXVzc2llcy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCx
+| 0UwlD2ZEpVLAeF0b/ob9Bj4Z3NH8YIlQ3kq73TJfgJWf4xx7/bpJaWQSjsY6gugN
+| ScboIRymiiPnnVY1EL/xFeNWcsywq8Q4Pu6p/CZDbsm5Ew/WQZDauT4xRdBn3NAy
+| 20G2sVK6vSsqWLVs3T3vd4HxX43X05vCdXpwz4F5iHOvnjgKDLbXn1JKGOs9+tOh
+| kaXEWNSh+7uAB6i9CNw3PbEMebldtMVN9cliI8/pxoEIDx61VCrJHgF/Z5jdgtOG
+| clzFq1/ntXSk/wkPUbsBq7AL4ob2lhtI4syeG4qzF/HUiOmK+0e/pFl/REXKUPtA
+| itJN0lRva5M2A9PhvaQVAgMBAAGjggJGMIICQjAOBgNVHQ8BAf8EBAMCBaAwHQYD
+| VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0O
+| BBYEFLdSahG5TgpTUn2F+oaKCqWrhtdoMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJ
+| QOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3Iz
+| Lm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcv
+| MBgGA1UdEQQRMA+CDWdvYXVzc2llcy5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEw
+| NwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5j
+| cnlwdC5vcmcwggECBgorBgEEAdZ5AgQCBIHzBIHwAO4AdQDfpV6raIJPH2yt7rhf
+| Tj5a6s2iEqRqXo47EsAgRFwqcwAAAYCh8i3YAAAEAwBGMEQCIHLvaMg9oETS0fqc
+| 1UTX3PaiTsnFRBbvfJs80iWPLa3TAiAhU9Ds7+aJa7m55dpW55mDlHuVexM+LHvr
+| jI4DxYE/MwB1ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABgKHy
+| LcoAAAQDAEYwRAIgOzA7ib9yF0cPQKs7oksPsFTTvDa8q3X0RVcJ3En/pL4CIBZ0
+| aiDow9iwfD85mwiLqzoAR/VGy4Q0Ly7nBr38/2PbMA0GCSqGSIb3DQEBCwUAA4IB
+| AQCUa4wmpj5hRyl4+emvuyoszNiBTKsM3bgBVr8CwHwf9h+Ehs4NIYvyj6u1qE34
+| SYDCC+R/bhctQgXXJn7hpR1DEbmWCyp10BwY443w1eOVEPLIE0QL3+5o1ldDwOrb
+| H47KRJmE3INCH/x6J+FFDhJv+FSTBrPAGYhS3shgZjxD8o63t4GhdQkzzo+W4XOb
+| WfaQBgQxE6MCP3GNfQaFlNufIpeKel4HIPQ0/BCzilhp0HBp2rVJASwDNQsvnaj+
+| Gc4qtmICo70meDKpc9qa9Nq9X4KYdH0DoCDh4idGAiLZN/nXzw6jNo3ZIFt1YST6
+| TbscGcwsxP50XXiW7fhbmP+e
+|_-----END CERTIFICATE-----
+80/tcp    open     http          Apache httpd 2.4.52 ((Unix) OpenSSL/1.1.1k PHP/7.3.33)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+110/tcp   open     pop3          qmail pop3d
+443/tcp   open     ssl/http      Apache httpd 2.4.52 ((Unix) OpenSSL/1.1.1k PHP/7.3.33)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=goaussies.com
+| Subject Alternative Name: DNS:goaussies.com
+| Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-05-08T03:34:04
+| Not valid after:  2022-08-06T03:34:03
+| MD5:   d6f8 09ce 4d14 6b70 54c6 fc05 a6d7 4a3c
+| SHA-1: 79cd b61e 9ad9 b06c c9fd 0d68 edcd 7f49 4139 321a
+| -----BEGIN CERTIFICATE-----
+| MIIFHjCCBAagAwIBAgISAyZKlroouUdoHIvhbt7mmzzTMA0GCSqGSIb3DQEBCwUA
+| MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+| EwJSMzAeFw0yMjA1MDgwMzM0MDRaFw0yMjA4MDYwMzM0MDNaMBgxFjAUBgNVBAMT
+| DWdvYXVzc2llcy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCx
+| 0UwlD2ZEpVLAeF0b/ob9Bj4Z3NH8YIlQ3kq73TJfgJWf4xx7/bpJaWQSjsY6gugN
+| ScboIRymiiPnnVY1EL/xFeNWcsywq8Q4Pu6p/CZDbsm5Ew/WQZDauT4xRdBn3NAy
+| 20G2sVK6vSsqWLVs3T3vd4HxX43X05vCdXpwz4F5iHOvnjgKDLbXn1JKGOs9+tOh
+| kaXEWNSh+7uAB6i9CNw3PbEMebldtMVN9cliI8/pxoEIDx61VCrJHgF/Z5jdgtOG
+| clzFq1/ntXSk/wkPUbsBq7AL4ob2lhtI4syeG4qzF/HUiOmK+0e/pFl/REXKUPtA
+| itJN0lRva5M2A9PhvaQVAgMBAAGjggJGMIICQjAOBgNVHQ8BAf8EBAMCBaAwHQYD
+| VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0O
+| BBYEFLdSahG5TgpTUn2F+oaKCqWrhtdoMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJ
+| QOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3Iz
+| Lm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcv
+| MBgGA1UdEQQRMA+CDWdvYXVzc2llcy5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEw
+| NwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5j
+| cnlwdC5vcmcwggECBgorBgEEAdZ5AgQCBIHzBIHwAO4AdQDfpV6raIJPH2yt7rhf
+| Tj5a6s2iEqRqXo47EsAgRFwqcwAAAYCh8i3YAAAEAwBGMEQCIHLvaMg9oETS0fqc
+| 1UTX3PaiTsnFRBbvfJs80iWPLa3TAiAhU9Ds7+aJa7m55dpW55mDlHuVexM+LHvr
+| jI4DxYE/MwB1ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1dJlwlXceEAAABgKHy
+| LcoAAAQDAEYwRAIgOzA7ib9yF0cPQKs7oksPsFTTvDa8q3X0RVcJ3En/pL4CIBZ0
+| aiDow9iwfD85mwiLqzoAR/VGy4Q0Ly7nBr38/2PbMA0GCSqGSIb3DQEBCwUAA4IB
+| AQCUa4wmpj5hRyl4+emvuyoszNiBTKsM3bgBVr8CwHwf9h+Ehs4NIYvyj6u1qE34
+| SYDCC+R/bhctQgXXJn7hpR1DEbmWCyp10BwY443w1eOVEPLIE0QL3+5o1ldDwOrb
+| H47KRJmE3INCH/x6J+FFDhJv+FSTBrPAGYhS3shgZjxD8o63t4GhdQkzzo+W4XOb
+| WfaQBgQxE6MCP3GNfQaFlNufIpeKel4HIPQ0/BCzilhp0HBp2rVJASwDNQsvnaj+
+| Gc4qtmICo70meDKpc9qa9Nq9X4KYdH0DoCDh4idGAiLZN/nXzw6jNo3ZIFt1YST6
+| TbscGcwsxP50XXiW7fhbmP+e
+|_-----END CERTIFICATE-----
+|_http-server-header: Apache/2.4.52 (Unix) OpenSSL/1.1.1k PHP/7.3.33
+587/tcp   open     smtp          netqmail smtpd 1.04
+| smtp-commands: goaussies.com, STARTTLS, AUTH LOGIN PLAIN, AUTH=LOGIN PLAIN, PIPELINING, 8BITMIME
+|_ netqmail home page: http://qmail.org/netqmail
+|_ssl-date: TLS randomness does not represent time
+2179/tcp  filtered vmrdp
+6646/tcp  open     ssh           OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 4a:1d:4a:56:9c:96:36:75:c9:90:12:21:09:5a:5d:a1 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7Sl3JVNRTPSAqXgyhAirklVuFUJVDo7AXK+e4/Jo9fUTBSUR3GUrolRQmhj52xy3qeOCGdMzzoQwT++WHbF2reHOWt1C3phERbkDWe+S7eOOT5t3YdNRqfdWHw+rqg9rCpRaOep3V4L936hS+D+vLUGy1t+bMwUSUfSoK4y4ox/Ne1bIV2NwV73dfUDWMB3aWWgqyEF0A4Eg+9eDjYNt/AqyuFsLjS3SFSlL5VzfWPQwueyQXaLf8O/smK7zGCP+bdaARJNL6ERFTx60JkFaof3FQpR4xt8hfVjURTyavD8VyDIzc+VzOptBEGkOz99KokfqTZULoiSQKMWa40xG2ka4GAxNatZSScFFV+w8w4OShZlIo3Yqv0rgOyjjyyOZvip5yI7ocrYWiWMNDsajjNsoMlOXpsF4xXyhyj9wdRlVP6moEBim9kQREIzWd3U/DjEgb62sWFntEiUJkBseSg032DYUM6xWLdL61SugtRb8UhHbUBmXWqyB5j9XHtYM=
+|   256 ca:ad:4c:bc:bc:e7:15:b3:7a:07:58:b0:5d:4d:7d:3c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDej8ri+pXKRe52950qBPzatkhyR04/thUsIXEBw+foml+cWnbWr5fqlfOBfNX1WqkhlYV9Z2rNEf6c8gznJzSc=
+|   256 71:d4:af:cb:09:fe:02:94:af:51:07:65:75:e9:1a:e7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAuHR0aMs4FBfXvxzoyAd4uAlO5em+4A9U0l+WteIzU1
+16992/tcp filtered amt-soap-http
+Service Info: Host: goaussies.com; OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun 10 20:13:24 2022 -- 1 IP address (1 host up) scanned in 168.45 seconds
